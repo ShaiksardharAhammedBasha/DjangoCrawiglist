@@ -1,0 +1,9 @@
+{% block content %}
+
+<form action="{% url 'new_search' %}" method="POST">
+    {% csrf_token %}
+    <input type="text" name="search" placeholder="search" />
+    <input type="submit" value="submit" />
+</form>
+
+{% endblock content %}
